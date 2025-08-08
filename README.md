@@ -373,7 +373,7 @@ We welcome contributions! Areas where you can help:
 There is NO license specified for this project and sub-projects to reduce source code file size;
 Much is generated using AI and previous version code reference etc.
 So author is not interested in applying any license and permits all kinds of use. 
-For the sake for formality you may assume this is licensed under the Apache License version 2.0
+For the sake for formality you may assume this is licensed under the MIT or Apache License version 2.0 whichever is more permissible for your use case.
 
 ---
 
