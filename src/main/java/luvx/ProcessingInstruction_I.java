@@ -1,6 +1,7 @@
 package luvx;
 
 import luvx.composable.DocumentLevelNode;
+import luvx.composable.HasTagName;
 import luvx.ftype.ProcessingInstruction_T;
 
 /**
@@ -8,7 +9,7 @@ import luvx.ftype.ProcessingInstruction_T;
  * Examples: <?xml version="1.0"?>, <?xml-stylesheet href="style.xsl"?>
  * Only allowed at document level.
  */
-public interface ProcessingInstruction_I<I extends ProcessingInstruction_I<I>> extends SelfClosingElement_I<I>, DocumentLevelNode<I> {
+public interface ProcessingInstruction_I<I extends ProcessingInstruction_I<I>> extends SelfClosingElement_I<I>, DocumentLevelNode<I>, HasTagName<I>{
     
     @Override
     default ProcessingInstruction_T<I> selfClosingElementType() {
