@@ -1,4 +1,4 @@
-package luvx;
+package luvx.rendering_behavior;
 
 /**
  * Block markup rendering behavior - newlines + indentation for structural boundaries.

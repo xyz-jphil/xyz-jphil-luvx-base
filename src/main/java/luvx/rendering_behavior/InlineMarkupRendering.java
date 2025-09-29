@@ -1,4 +1,4 @@
-package luvx;
+package luvx.rendering_behavior;
 
 /**
  * Inline markup rendering behavior - no newlines, flows with text.

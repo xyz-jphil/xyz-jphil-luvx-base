@@ -1,5 +1,6 @@
 package luvx;
 
+import luvx.rendering_behavior.BlockMarkupRendering;
 import luvx.composable.DocumentLevelNode;
 import luvx.composable.HasTagName;
 import luvx.ftype.ProcessingInstruction_T;

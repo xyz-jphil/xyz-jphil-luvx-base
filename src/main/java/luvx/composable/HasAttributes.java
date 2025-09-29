@@ -3,6 +3,7 @@ package luvx.composable;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
+import luvx.Attr_I;
 
 /**
  * Composable interface for nodes that can have attributes
@@ -10,6 +11,10 @@ import java.util.Set;
 public interface HasAttributes<I extends HasAttributes<I>> {
     
     String attr(String name);
+    
+    default CastableAttr attribute(String name){
+        return new CastableAttr(name, attr(name));
+    }
     
     Map<String, String> attributes();
     

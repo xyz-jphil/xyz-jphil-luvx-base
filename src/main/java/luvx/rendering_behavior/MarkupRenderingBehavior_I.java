@@ -1,4 +1,4 @@
-package luvx;
+package luvx.rendering_behavior;
 
 /**
  * Sealed interface defining markup rendering behavior for AI-optimized output.
