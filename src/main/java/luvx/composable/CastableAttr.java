@@ -158,5 +158,13 @@ public class CastableAttr implements Attr_I {
             return Optional.empty();
         }
     }
+    
+    public Optional<String> optString(){
+        try {
+            return Optional.of(value);
+        } catch (Exception e) {
+            return Optional.empty();
+        }
+    }
 
 }
