@@ -15,7 +15,7 @@ import luvx.ContainerElement_I;
  * This matches browser innerText and JSoup .text() behavior.
  * For W3C spec-compliant extraction (includes everything), use {@link TextExtractionProvider}.
  */
-public interface TextContentProvider<I extends ContainerElement_I<I>> {
+public interface InnerTextProvider<I extends ContainerElement_I<I>> {
     I self();
 
     /**
@@ -24,9 +24,9 @@ public interface TextContentProvider<I extends ContainerElement_I<I>> {
      *
      * Matches browser innerText and JSoup .text() behavior.
      */
-    default String textContent() {
+    default String innerText() {
         var sb = new StringBuilder();
-        TextExtractionProvider.extractText(self(), sb, TextExtractionProvider.TextExtractionMode.TEXT_CONTENT);
+        TextExtractionProvider.extractText(self(), sb, TextExtractionProvider.TextExtractionMode.INNER_TEXT);
         return sb.toString();
     }
 }

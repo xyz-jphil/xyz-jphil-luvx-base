@@ -30,7 +30,9 @@ import luvx.ftype.FragType_I;
  * │       ├── SelfClosingElement_I<I> // do not have children 
  * │       │   ├── VoidElement_I<I> (terminal)
  * │       │   └── ProcessingInstruction_I<I> (terminal)
- * │       └── ContainerElement_I<I> (terminal) // have children
+ * │       ├── ContainerElement_I<I> (terminal) // have children
+ * │       ├── RawTextElement_I<I> (terminal) // have text only children, no escaping
+ * │       └── EscapableRawTextElement_I<I> (terminal) // have text only children, need escaping
  * └── Frags_I<I> // a collection of fragments in the same level (not nested in a child)
  * 
  * Design Decisions:
